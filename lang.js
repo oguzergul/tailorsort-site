@@ -19,7 +19,7 @@
     document.querySelectorAll("a[data-keep-lang]").forEach(function (a) {
       var url = new URL(a.getAttribute("href"), location.href);
       url.searchParams.set("lang", next);
-      a.href = url.pathname.split("/").pop() + url.search;
+      a.href = url.pathname.split("/").pop() + url.search + url.hash;
     });
     var title = document.querySelector('meta[name="title-' + next + '"]');
     if (title) document.title = title.content;
@@ -35,5 +35,9 @@
       });
     });
     show(lang);
+    // #delete and similar anchors point at a section in both languages (id "delete-tr" / "delete-en"): open the shown one
+    var anchor = location.hash.slice(1);
+    var target = anchor && document.getElementById(anchor + "-" + lang);
+    if (target) target.scrollIntoView();
   });
 })();

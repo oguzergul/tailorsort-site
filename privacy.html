@@ -52,8 +52,12 @@
     <p>Açtığınız seviyeler, coin ve booster miktarlarınız, canlarınız, dil, ses, müzik ve titreşim ayarlarınız, gördüğünüz
       eğitim adımları ve satın alımlarınızın teslim edildiğini gösteren kayıtlar telefonunuzun kendi depolama alanında tutulur.
       Bu kayıtların kendisi bize ya da başkasına gönderilmez. 5/b'de anlatılan analitik açıksa Oyun yalnızca bazı anları
-      (ör. hangi seviyeye başladığınız, kazandığınız ya da kaybettiğiniz) olay olarak Unity Analytics'e bildirir. Bulut kaydı
-      yoktur: oyunu silerseniz ya da telefon değiştirirseniz bu veriler geri getirilemez.</p>
+      (ör. hangi seviyeye başladığınız, kazandığınız ya da kaybettiğiniz) olay olarak Unity Analytics'e bildirir. Ayarlarınız
+      dışındakilerin bir kopyası, telefon değiştirdiğinizde ya da Oyunu yeniden yüklediğinizde geri gelmesi için Apple'ın
+      <strong>iCloud</strong> hizmetinde, kendi Apple Hesabınızda saklanır (iCloud anahtar-değer deposu). Bu kopyayı Apple
+      sizin adınıza tutar; biz göremeyiz ve ona erişemeyiz. iPhone'unuzda iCloud kapalıysa veriler yalnızca telefonunuzda
+      kalır ve Oyunu silerseniz ya da telefon değiştirirseniz geri getirilemez. Apple'ın iCloud verilerini nasıl işlediği:
+      <a href="https://www.apple.com/legal/privacy/">Apple Gizlilik Politikası</a>.</p>
 
     <h2>3. Satın alımlar</h2>
     <h3>a) Apple</h3>
@@ -170,6 +174,7 @@
     <h2>8. Saklama süreleri</h2>
     <ul>
       <li>Telefonunuzdaki oyun verileri: Oyunu silene kadar.</li>
+      <li>iCloud'daki kopyası: siz iCloud'dan silene kadar (Oyunu silmek onu silmez).</li>
       <li>Unity satın alım raporları: Unity'nin saklama politikasına göre.</li>
       <li>Unity Analytics olayları ve çökme raporları: Unity'nin Analytics saklama süresine göre; telefonda bekleyen çökme
         raporları gönderilene ya da Oyun silinene kadar.</li>
@@ -182,10 +187,11 @@
 
     <h2 id="delete-tr">9. Verilerinizi silme</h2>
     <ul>
-      <li><strong>Telefonunuzdaki oyun verileri:</strong> Oyunda hesap olmadığı için bütün oyun verileri yalnızca
-        telefonunuzdadır. <strong>Oyunu silmek</strong> ilerlemenizi, coin'lerinizi, booster'larınızı, canlarınızı ve
-        ayarlarınızı telefonunuzdan kalıcı olarak kaldırır. Bu işlem geri alınamaz; satın alınmış ve henüz kullanılmamış
-        öğeler de silinir.</li>
+      <li><strong>Telefonunuzdaki oyun verileri:</strong> Oyunda hesap olmadığı için oyun verileri telefonunuzda ve
+        iCloud'unuzdadır. <strong>Oyunu silmek</strong> ilerlemenizi, coin'lerinizi, booster'larınızı, canlarınızı ve
+        ayarlarınızı telefonunuzdan kalıcı olarak kaldırır; iCloud'daki kopyasını iPhone Ayarlar › [adınız] › iCloud altındaki
+        depolama ayarlarından silebilirsiniz. Bu işlem geri alınamaz; satın alınmış ve henüz kullanılmamış öğeler de
+        silinir.</li>
       <li><strong>Unity'deki satın alım raporları:</strong> Oyunda hesap olmadığı için bu raporları kimliğinizle eşleştiremeyiz.
         Oyunu (ve aynı geliştiricinin telefonunuzdaki diğer uygulamalarını) sildiğinizde IDFV de değişir; eski raporlar artık
         telefonunuzla ilişkilendirilemez. Silinmelerini istiyorsanız bize yazın; talebinizi Unity'ye iletiriz. Unity'ye
@@ -245,8 +251,9 @@
     <h3>Sürüm geçmişi</h3>
     <ul>
       <li><strong>Sürüm 5 · 25 Ekim 2026:</strong> Unity Analytics ile izne bağlı oyun içi analitik ve çökme raporları
-        eklendi (5/b); telefondaki veriler, satın alım raporu, amaçlar, aktarım, saklama, silme, Kaliforniya ve güvenlik
-        bölümleri buna göre güncellendi.</li>
+        eklendi (5/b); oyun verilerinin (ayarlar hariç) bir kopyası, telefon değiştirdiğinizde ya da Oyunu yeniden
+        yüklediğinizde geri gelmesi için kendi iCloud hesabınızda saklanıyor (2). Telefondaki veriler, satın alım raporu,
+        amaçlar, aktarım, saklama, silme, Kaliforniya ve güvenlik bölümleri buna göre güncellendi.</li>
       <li><strong>Sürüm 4 · 24 Ekim 2026:</strong> Oyun içindeki "Verilerimi sil" seçeneği kaldırıldı; telefondaki oyun
         verileri Oyun silinerek kaldırılır. Saklama ve silme bölümleri buna göre güncellendi.</li>
       <li><strong>Sürüm 3 · 7 Ekim 2026:</strong> Unity LevelPlay ile isteğe bağlı reklamlar, iPhone İzleme izni, Google User
@@ -293,9 +300,12 @@
     <p>The levels you have unlocked, your coins and boosters, your lives, your language, sound, music and haptics settings,
       the tutorial steps you have seen and the records showing that your purchases were delivered are kept in your phone's
       own storage. These records themselves are not sent to us or anyone else. If analytics (5(b)) is on, the Game only
-      reports certain moments as events to Unity Analytics (for example which level you started, won or lost). There is no
-      cloud save: if you
-      delete the Game or change phones, this data cannot be restored.</p>
+      reports certain moments as events to Unity Analytics (for example which level you started, won or lost). A copy of all
+      but your settings is kept in Apple's <strong>iCloud</strong>, in your own Apple Account (iCloud key-value storage), so
+      it comes back when you change phones or reinstall the Game. Apple keeps this copy for you; we cannot see or access it.
+      If iCloud is off on your iPhone, the data stays only on your phone and cannot be restored if you delete the Game or
+      change phones. How Apple handles iCloud data: <a href="https://www.apple.com/legal/privacy/">Apple Privacy
+      Policy</a>.</p>
 
     <h2>3. Purchases</h2>
     <h3>a) Apple</h3>
@@ -409,6 +419,7 @@
     <h2>8. Retention</h2>
     <ul>
       <li>Game data on your phone: until you delete the Game.</li>
+      <li>Its copy in iCloud: until you delete it from iCloud (deleting the Game does not).</li>
       <li>Unity purchase reports: under Unity's retention policy.</li>
       <li>Unity Analytics events and crash reports: under Unity's Analytics retention period; crash reports waiting on your
         phone until they are sent or you delete the Game.</li>
@@ -421,9 +432,10 @@
 
     <h2 id="delete-en">9. Deleting your data</h2>
     <ul>
-      <li><strong>Game data on your phone:</strong> the Game has no account, so all game data is on your phone only.
-        <strong>Deleting the Game</strong> permanently removes your progress, coins, boosters, lives and settings from your
-        phone. This cannot be undone, and purchased items you haven't used yet are deleted too.</li>
+      <li><strong>Game data on your phone:</strong> the Game has no account, so game data is on your phone and in your
+        iCloud. <strong>Deleting the Game</strong> permanently removes your progress, coins, boosters, lives and settings from
+        your phone; delete its iCloud copy in the storage settings under iPhone Settings › [your name] › iCloud. This cannot
+        be undone, and purchased items you haven't used yet are deleted too.</li>
       <li><strong>Purchase reports at Unity:</strong> because the Game has no account, we cannot match these reports to you.
         When you delete the Game (and any other apps from the same developer on your phone), the IDFV changes too, and old
         reports can no longer be linked to your phone. If you want them deleted, email us and we will pass your request to
@@ -480,8 +492,9 @@
     <h3>Version history</h3>
     <ul>
       <li><strong>Version 5 · 25 October 2026:</strong> added consent-based in-game analytics and crash reports through
-        Unity Analytics (5(b)); updated the on-phone data, purchase report, purposes, transfers, retention, deletion,
-        California and security sections accordingly.</li>
+        Unity Analytics (5(b)); a copy of your game data (except settings) is kept in your own iCloud account, so it comes
+        back when you change phones or reinstall the Game (2). Updated the on-phone data, purchase report, purposes,
+        transfers, retention, deletion, California and security sections accordingly.</li>
       <li><strong>Version 4 · 24 October 2026:</strong> removed the in-game "Delete my data" option; game data on your
         phone is removed by deleting the Game. Updated the retention and deletion sections accordingly.</li>
       <li><strong>Version 3 · 7 October 2026:</strong> added optional ads through Unity LevelPlay, the iPhone tracking
